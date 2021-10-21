@@ -6,11 +6,11 @@ Basically a mini redux. It creates a "state cell" which then can can be modified
 
 Checks:
 
-✔️ Functional programming
-✔️ Works with every framework
-✔️ Super small, no dependencies
-✔️ Enforces readonly types when used with Typescript
-✔️ Allows stateful functional programming without classes
+- ✔️ Functional programming
+- ✔️ Works with every framework
+- ✔️ Super small, no dependencies
+- ✔️ Enforces readonly types when used with Typescript
+- ✔️ Allows stateful functional programming without classes
 
 ## NPM
 
