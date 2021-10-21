@@ -21,7 +21,7 @@ export const createStateCell = <
 ) => {
   let state = baseState;
 
-  const msg = Object.create({}) as MsgContainer<State, typeof reducerRecord>;
+  const msg = Object.create(null) as MsgContainer<State, typeof reducerRecord>;
   for (const msgName of Object.keys(reducerRecord)) {
     const isValid = /^[a-z][a-zA-Z0-9]*$/.test(msgName);
 
