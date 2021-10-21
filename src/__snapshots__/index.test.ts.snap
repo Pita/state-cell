@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rejects invalid message names 1`] = `"'Scale' is not a valid message name. Message names must be alphanumeric and start with a lowercase letter"`;
