@@ -32,9 +32,6 @@ interface Rectangle {
 }
 
 // interface of messages
-interface EnsureRatioMsg {
-  ratio: number;
-}
 interface ScaleMsg {
   scaleFactor: 2;
 }
@@ -49,11 +46,7 @@ const scale: StateCellReducer<Rectangle, ScaleMsg> = (state, msg) => ({
   width: state.width * msg.scaleFactor,
   height: state.height * msg.scaleFactor,
 });
-const ensureRatio: StateCellReducer<Rectangle, EnsureRatioMsg> = (
-  state,
-  msg
-) => ({ width: state.width, height: state.width * msg.ratio });
-const msgs = { scale, ensureRatio };
+const msgs = { scale };
 
 // finally, create the state cell
 const stateCell = createStateCell<Rectangle, typeof msgs>(initialState, msgs);
